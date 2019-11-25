@@ -1,14 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import Header from './header/header'
+import Main from './Main/Main'
 import './App.css';
-
 function App() {
   return (
       <React.Fragment>
         <Header/>
         <div className="App">
           <header className="App-header">
+            <Main/>  
           </header>
         </div>
       </React.Fragment>
