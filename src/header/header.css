@@ -2,7 +2,14 @@
     width:100%;
     height: 60px;
     background-color:#4c5c5f;
+    
+}
+.MuiTabs-flexContainer{
+    justify-content: flex-end;
+    margin: 6px;
 }
 .nav-bar-tabs{
     color : #fff !important;
+    font-size: 0.9em !important;
+    font-weight: 700 !important;
 }
