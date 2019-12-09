@@ -3,7 +3,9 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import red from '@material-ui/core/colors/red';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
+
 import './header.css';
 
 
@@ -21,7 +23,7 @@ const Header = () => {
                         className="nav-bar-tabs"
                         value={value}
                         //indicatorColor="primary"
-                        TabIndicatorProps={{textColor:'primary'}}
+                        TabIndicatorProps={{textColor:'inherit'}}
                         textColor="primary"
                         onChange={handleChange}
                         aria-label="disabled tabs example"
