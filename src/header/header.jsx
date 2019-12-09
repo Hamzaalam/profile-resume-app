@@ -22,7 +22,7 @@ const Header = () => {
                     <Tabs
                         className="nav-bar-tabs"
                         value={value}
-                        //indicatorColor="primary"
+                        indicatorColor="primary"
                         TabIndicatorProps={{textColor:'inherit'}}
                         textColor="primary"
                         onChange={handleChange}

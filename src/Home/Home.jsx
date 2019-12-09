@@ -1,25 +1,16 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
 import ListItemLink from '@material-ui/core/Link';
-import ListItemText from '@material-ui/core/ListItemText';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faHackerrank , faGithub , faTwitter , faStackOverflow} from '@fortawesome/free-brands-svg-icons'
-
-import './Home.css'
+import Icon from './Icon'
 
 const Home = () => {
-    const [iconColor, setIconColor] = React.useState("#545b67");
     const flexContainer = {
         display: 'flex',
         flexDirection: 'row',
         padding: 24,
     };
-    const icons = {
-        width: 100,
-        fontSize: "3.5rem"
-    }
     const profileHeading = {
         display: 'flex',
         justifyContent: 'center',
@@ -31,11 +22,6 @@ const Home = () => {
         display: 'flex',
         margin: '0 auto',
     }
-   const changeIconColor = (type) =>{
-       if(type==='onMouseEnter') setIconColor('aliceblue');
-       if(type==='onMouseLeave') setIconColor('#545b67');
-
-   }
     return (<div className="home">
         <img
             style={profileImage}
@@ -48,40 +34,19 @@ const Home = () => {
 
         <List component="nav" aria-label="secondary mailbox folders" style={flexContainer}>
             <ListItemLink href="#simple-list" target="_blank">
-                <ListItemText 
-                    onMouseEnter={()=>changeIconColor('onMouseEnter')} 
-                    onMouseLeave={()=>changeIconColor('onMouseLeave')}
-                >
-                        {<FontAwesomeIcon icon={faTwitter} style={icons} color={iconColor}/>}
-                </ListItemText>
+                <Icon icon={faTwitter}/>
             </ListItemLink>
             <ListItemLink href="https://github.com/Hamzaalam" target="_blank">
-                <ListItemText 
-                    onMouseEnter={()=>changeIconColor('onMouseEnter')} 
-                    onMouseLeave={()=>changeIconColor('onMouseLeave')}
-    >                    {<FontAwesomeIcon icon={faGithub} style={icons} color={iconColor}/>}
-                </ListItemText>
+                <Icon icon={faGithub}/>
             </ListItemLink>
             <ListItemLink href="https://facebook.com" target="_blank">
-                <ListItemText 
-                    onMouseEnter={()=>changeIconColor('onMouseEnter')} 
-                    onMouseLeave={()=>changeIconColor('onMouseLeave')}
-    >                    {<FontAwesomeIcon icon={faFacebookSquare} style={icons} color={iconColor}/>}
-                </ListItemText>
+                <Icon icon={faFacebookSquare}/>
             </ListItemLink>
             <ListItemLink href="#simple-list" target="_blank">
-                <ListItemText 
-                    onMouseEnter={()=>changeIconColor('onMouseEnter')} 
-                    onMouseLeave={()=>changeIconColor('onMouseLeave')}
->                        {<FontAwesomeIcon icon={faStackOverflow} style={icons} color={iconColor}/>}
-                </ListItemText>
+                <Icon icon={faStackOverflow}/>
             </ListItemLink>
             <ListItemLink href="https://www.hackerrank.com/hamzaalam" target="_blank">
-                <ListItemText 
-                    onMouseEnter={()=>changeIconColor('onMouseEnter')} 
-                    onMouseLeave={()=>changeIconColor('onMouseLeave')}
->                        {<FontAwesomeIcon icon={faHackerrank} style={icons} color={iconColor}/>}
-                </ListItemText>
+                <Icon icon={faHackerrank}/>
             </ListItemLink>
         </List>
 
