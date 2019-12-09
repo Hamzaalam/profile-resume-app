@@ -14,7 +14,7 @@ const Home = () => {
     const flexContainer = {
         display: 'flex',
         flexDirection: 'row',
-        padding: 40,
+        padding: 24,
       };
       const icons ={
             color:"",
@@ -22,13 +22,24 @@ const Home = () => {
             fill:"#545b67",
             fontSize:"3.5rem"
       } 
+      const profileHeading ={
+          display: 'flex',
+          justifyContent: 'center',
+          padding: '20px 0 0 0'
+      }
+      const profileImage ={
+            borderRadius:'100%',
+            width: 190,
+            display:'flex',
+            margin: '0 auto',
+      }
     return ( <div className="home">
                 <img 
-                     className="profile-image"
-                     src={process.env.PUBLIC_URL + '/0.jpeg'} 
+                     style={profileImage}
+                     src={process.env.PUBLIC_URL + '/small.png'} 
                      alt="profile-image"
                 />
-                <Typography variant="h3">
+                <Typography variant="h4" style={profileHeading}>
                     Hello, I’m Hamza Alam!
                 </Typography>
 

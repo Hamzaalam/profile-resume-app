@@ -9,7 +9,7 @@ import './header.css';
 
 
 const Header = () => {
-    const [value, setValue] = React.useState(2);
+    const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -20,7 +20,8 @@ const Header = () => {
                     <Tabs
                         className="nav-bar-tabs"
                         value={value}
-                        indicatorColor="primary"
+                        //indicatorColor="primary"
+                        TabIndicatorProps={{textColor:'primary'}}
                         textColor="primary"
                         onChange={handleChange}
                         aria-label="disabled tabs example"
