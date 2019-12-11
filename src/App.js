@@ -14,7 +14,7 @@ const muiTheme = createMuiTheme({
 function App(props) {
   return (
       <React.Fragment>
-        <MuiThemeProvider >
+        {/* <MuiThemeProvider > */}
           <div style={{fontFamily: font}} className="container">
             <Header/>
             <div className="App">
@@ -23,7 +23,7 @@ function App(props) {
               </header>
             </div>
           </div>
-        </MuiThemeProvider>
+        {/* </MuiThemeProvider> */}
       </React.Fragment>
   );
 }

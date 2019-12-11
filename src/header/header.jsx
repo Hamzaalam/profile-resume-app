@@ -22,7 +22,7 @@ const Header = () => {
                         className="nav-bar-tabs"
                         value={value}
                         indicatorColor="primary"
-                        TabIndicatorProps={{textColor:'inherit'}}
+                        //TabIndicatorProps={{textColor:'inherit'}}
                         textColor="primary"
                         onChange={handleChange}
                         aria-label="disabled tabs example"
