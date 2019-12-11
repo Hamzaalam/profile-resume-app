@@ -17,7 +17,6 @@ const Header = () => {
         setValue(newValue);
 
     };
-    const whiteRed = red[50]; 
     return (<div className='header'>
                     <Tabs
                         className="nav-bar-tabs"

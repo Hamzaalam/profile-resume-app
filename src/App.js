@@ -14,8 +14,8 @@ const muiTheme = createMuiTheme({
 function App(props) {
   return (
       <React.Fragment>
-        <MuiThemeProvider theme={muiTheme}>
-          <div style={{fontFamily: font}}>
+        <MuiThemeProvider >
+          <div style={{fontFamily: font}} className="container">
             <Header/>
             <div className="App">
               <header className="App-header">

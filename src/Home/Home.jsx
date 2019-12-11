@@ -26,23 +26,23 @@ const Home = () => {
         <img
             style={profileImage}
             src={process.env.PUBLIC_URL + '/small.png'}
-            alt="profile-image"
+            alt="Hamza-Alam-profile-image"
         />
-        <Typography variant="h4" style={profileHeading}>
+        <Typography variant="h4" style={profileHeading} className="heading">
             Hello, I’m Hamza Alam!
                 </Typography>
 
         <List component="nav" aria-label="secondary mailbox folders" style={flexContainer}>
-            <ListItemLink href="#simple-list" target="_blank">
+            <ListItemLink href="https://twitter.com/syedhamza100" target="_blank">
                 <Icon icon={faTwitter}/>
             </ListItemLink>
             <ListItemLink href="https://github.com/Hamzaalam" target="_blank">
                 <Icon icon={faGithub}/>
             </ListItemLink>
-            <ListItemLink href="https://facebook.com" target="_blank">
+            <ListItemLink href="https://www.facebook.com/syed.hamza.100" target="_blank">
                 <Icon icon={faFacebookSquare}/>
             </ListItemLink>
-            <ListItemLink href="#simple-list" target="_blank">
+            <ListItemLink href="https://stackoverflow.com/users/8237983/hamza-alam" target="_blank">
                 <Icon icon={faStackOverflow}/>
             </ListItemLink>
             <ListItemLink href="https://www.hackerrank.com/hamzaalam" target="_blank">

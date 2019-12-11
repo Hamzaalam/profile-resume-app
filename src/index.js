@@ -2,13 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
+import { Router } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+// import { createBrowserHistory } from "history";
+
+// const history = createBrowserHistory();
 
 ReactDOM.render(
-                <BrowserRouter>
-                    <App />  
-                </BrowserRouter>,
+                <HashRouter basename='/'>
+                    <App  />  
+                </HashRouter>,
                 document.getElementById('root')
                 );
 
