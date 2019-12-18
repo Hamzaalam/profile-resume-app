@@ -12,17 +12,20 @@ import './header.css';
 
 const Header = () => {
     const [value, setValue] = React.useState(0);
-
     const handleChange = (event, newValue) => {
         setValue(newValue);
 
+        console.log(event)
+        console.log(newValue)
+
     };
+    
     return (<div className='header'>
                     <Tabs
                         className="nav-bar-tabs"
                         value={value}
                         indicatorColor="primary"
-                        //TabIndicatorProps={{textColor:'inherit'}}
+                        TabIndicatorProps={{style:{background:'#282c34'}}}
                         textColor="primary"
                         onChange={handleChange}
                         aria-label="disabled tabs example"
