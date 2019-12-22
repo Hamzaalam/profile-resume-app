@@ -4,14 +4,16 @@ import Home from '../Home/Home'
 import Resume from '../Resume/Resume'
 import Project from '../Projects/Project'
 import Blog from "../Blog/Blog";
+import Contact from '../Contact/Contact';
 
 const Main = () => {
     return (<div>
             <Switch>
-              <Route exact path='/' component={Home}/>
               <Route path='/resume' component={Resume}/>
               <Route path='/projects' component={Project}/>
               <Route path='/blog' component={Blog}/>
+              <Route path='/contact' component={Contact} />
+              <Route exact path='/' component={Home}/>
             </Switch>   
             </div> 
             );

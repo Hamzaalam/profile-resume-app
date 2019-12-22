@@ -13,7 +13,8 @@ const project = () => {
                 <section style={section}>
                     <h2>Pojects Coming Soon!</h2>
                 </section>
-            </div> );
+            </div> 
+            );
 }
  
 export default project;

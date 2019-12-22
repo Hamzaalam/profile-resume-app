@@ -1,8 +1,6 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import red from '@material-ui/core/colors/red';
 import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core';
 
@@ -62,6 +60,15 @@ const Header = (props) => {
                             to='/Projects'
                             classes={{ root: classes.Tab }} 
                             style={value === 2 ? {background:'#282c34'}:{background:'#535b67'}}
+
+                        />
+                         <Tab 
+                            className="nav-bar-tabs" 
+                            label="Contact" 
+                            component={Link}
+                            to='/contact'
+                            classes={{ root: classes.Tab }} 
+                            style={value === 3 ? {background:'#282c34'}:{background:'#535b67'}}
 
                         />
                         <Tab 
