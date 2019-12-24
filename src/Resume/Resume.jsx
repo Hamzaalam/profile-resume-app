@@ -8,7 +8,8 @@ const styles = {
     Typography: {
       lineHeight:'1.8em',
       color:'#333',
-      fontSize:'20px'
+      fontSize:'20px',
+      letterSpacing:0
     },
     Button:{
         textTransform:'capitalize',
@@ -33,7 +34,7 @@ const Resume = (props) => {
         marginTop:'40px',
     }
     const heading ={
-        fontWeight:'700'
+        fontWeight:'700',
     }
     const targetBorder = {
         position: 'relative',
@@ -56,7 +57,16 @@ const Resume = (props) => {
         backgroundColor:'#264e59'
     }
     const itemCompanyTitle = {
-
+        color:'#333',
+    }
+    const itemPositionTitle = {
+        color:'#888',
+        marginTop: '7px',
+        marginLeft:'15px',
+        fontSize: '20px'
+    }
+    const itemDescription = {
+        marginLeft:'30px',
     }
     const { classes } = props;
 
@@ -64,7 +74,7 @@ const Resume = (props) => {
                 <section className='overview' style={section}>
                     <Grid container >
                        <Grid item xs={6}> 
-                            <Typography variant='h4' style={heading}>
+                            <Typography variant='h4' style={heading} >
                                 Overview
                             </Typography>
                        </Grid>
@@ -95,19 +105,40 @@ const Resume = (props) => {
                        </Grid>
                     </Grid>
                     <Grid container style={descriptionItem}>
-
-                        <Grid item xs={2}>
+                        <Grid item xs={1}>
                             <div style={targetBorder}>
                                 <div style={targetDot}>                                        
                                 </div>
                             </div>
                         </Grid>
-                        <Grid item xs={10}>
+                        <Grid item xs={8} style={{display:'flex'}}>
                             <Typography variant='h4' style={itemCompanyTitle}>
-                                Atlassian (Bitbucket Server) 
+                                Zaavia 
+                            </Typography>
+                            <Typography  style={itemPositionTitle}>
+                                Jr. Software Developer
                             </Typography>
                         </Grid>
                     </Grid>
+                    <div style={itemDescription}>
+                        <ul style={{margin:'unset'}}>
+                            <li>
+                                <Typography classes={{ root: classes.Typography }}> 
+                                    Grew a team from four to eight developers (a mix of front and backend developers)
+                                </Typography>   
+                            </li>
+                            <li>
+                                <Typography classes={{ root: classes.Typography }}> 
+                                    Grew a team from four to eight developers (a mix of front and backend developers)
+                                </Typography>   
+                            </li>
+                            <li>
+                                <Typography classes={{ root: classes.Typography }}> 
+                                    Grew a team from four to eight developers (a mix of front and backend developers)
+                                </Typography>   
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </div>  
             );
