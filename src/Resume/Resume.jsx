@@ -3,6 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core';
+import Item from './Item';
 
 const styles = {
     Typography: {
@@ -35,38 +36,6 @@ const Resume = (props) => {
     }
     const heading ={
         fontWeight:'700',
-    }
-    const targetBorder = {
-        position: 'relative',
-        left: '-38px',
-        top: '-15px',
-        width: '40px',
-        height: '40px',
-        border: '15px solid white',
-        borderRadius: '50%',
-        zIndex: '1',
-        backgroundColor:'#264e59'
-    }
-    const targetDot ={
-        width: '10px',
-        height: '10px',
-        borderRadius:'50%',
-        zIndex: '10',
-        margin: '5px auto',
-        border: '10px solid white',
-        backgroundColor:'#264e59'
-    }
-    const itemCompanyTitle = {
-        color:'#333',
-    }
-    const itemPositionTitle = {
-        color:'#888',
-        marginTop: '7px',
-        marginLeft:'15px',
-        fontSize: '20px'
-    }
-    const itemDescription = {
-        marginLeft:'30px',
     }
     const { classes } = props;
 
@@ -104,41 +73,12 @@ const Resume = (props) => {
                             </Typography>
                        </Grid>
                     </Grid>
-                    <Grid container style={descriptionItem}>
-                        <Grid item xs={1}>
-                            <div style={targetBorder}>
-                                <div style={targetDot}>                                        
-                                </div>
-                            </div>
-                        </Grid>
-                        <Grid item xs={8} style={{display:'flex'}}>
-                            <Typography variant='h4' style={itemCompanyTitle}>
-                                Zaavia 
-                            </Typography>
-                            <Typography  style={itemPositionTitle}>
-                                Jr. Software Developer
-                            </Typography>
-                        </Grid>
-                    </Grid>
-                    <div style={itemDescription}>
-                        <ul style={{margin:'unset'}}>
-                            <li>
-                                <Typography classes={{ root: classes.Typography }}> 
-                                    Grew a team from four to eight developers (a mix of front and backend developers)
-                                </Typography>   
-                            </li>
-                            <li>
-                                <Typography classes={{ root: classes.Typography }}> 
-                                    Grew a team from four to eight developers (a mix of front and backend developers)
-                                </Typography>   
-                            </li>
-                            <li>
-                                <Typography classes={{ root: classes.Typography }}> 
-                                    Grew a team from four to eight developers (a mix of front and backend developers)
-                                </Typography>   
-                            </li>
-                        </ul>
-                    </div>
+                    <Item
+                        companyTitle={''}
+                        postion={''}
+                        year={''}
+                        points={''}
+                    />
                 </section>
             </div>  
             );

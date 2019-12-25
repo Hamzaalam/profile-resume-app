@@ -77,7 +77,7 @@ const Header = (props) => {
                             component={Link}
                             to='/blog'
                             classes={{ root: classes.Tab }} 
-                            style={value === 3 ? {background:'#282c34'}:{background:'#535b67'}}
+                            style={value === 4 ? {background:'#282c34'}:{background:'#535b67'}}
 
                         />
                     </Tabs>
