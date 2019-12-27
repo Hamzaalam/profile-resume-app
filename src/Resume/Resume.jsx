@@ -65,19 +65,66 @@ const Resume = (props) => {
                         </Grid>
                     </Grid>
                 </section>
-                <section className='experience' style={section}>
-                    <Grid container >
-                       <Grid item xs={12}> 
-                            <Typography variant='h4' style={heading}>
-                                Experience
-                            </Typography>
-                       </Grid>
-                    </Grid>
+                <section className='Experience' style={section}>         
+                    <Typography variant='h4' style={heading}>
+                        Experience
+                    </Typography>
                     <Item
-                        companyTitle={''}
-                        postion={''}
-                        year={''}
-                        points={''}
+                        flag={'Experience'}
+                        companyTitle={'Zaavia'}
+                        postion={'Jr. Software Developer'}
+                        positionRole={'React, Redux, Angular, Nodejs, MongoDB, Material UI, PDFjs, MinIO(S3)'}
+                        year={'Jun 2019 – current'}
+                        points={['Develop most of the front features on React for the enterprise product (EDMS).',
+                                 'Developed the RESTful APIs for the consumption of several different products.',
+                                 'Deploy the MinIO(s3) on the local machine (linux/ubuntu) with using container orchestration technology (Kuberenetes).',
+                                 
+                                ]}
+                    />
+                     <Item
+                        flag={'Experience'}
+                        companyTitle={'Codies.io'}
+                        postion={'Web Developer Intern'}
+                        positionRole={'JavaScript(ES6), Angular, React, HTML, JS, CSS'}
+                        year={'Nov 2018 – Apr 2019'}
+                        points={['Built a questionnaire application with user management and result automation.',
+                                 'Integrate new features at their existing apps on Angular.',
+                                 'Customization and feature integration to their existing different sites on Angular and React.'
+                                ]}
+                    />
+                </section>
+                <section className='Education' style={section}>         
+                    <Typography variant='h4' style={heading}>
+                        Education
+                    </Typography>
+                    <Item
+                        flag={'Education'}
+                        companyTitle={'Iqra University'}
+                        //postion={'BS(Computer Science)'}
+                        positionRole={'BS(Computer Science)'}
+                        year={'Sep 2015 – May 2019'}
+                        points={['Develop most of the front features on React for the enterprise product (EDMS).',
+                                 'Developed the RESTful APIs for the consumption of several different products.',
+                                 'Deploy the MinIO(s3) on the local machine (linux/ubuntu) with using container orchestration technology (Kuberenetes).',
+                                 
+                                ]}
+                    />
+                </section>
+                <section className='Certification' style={section}>         
+                    <Typography variant='h4' style={heading}>
+                        Certification
+                    </Typography>
+                    <Item
+                        flag={'Certification'}
+                        companyTitle={'Iqra University'}
+                        //postion={'BS(Computer Science)'}
+                        positionRole={'BS(Computer Science)'}
+                        year={'Sep 2015 – May 2019'}
+                        points={['Develop most of the front features on React for the enterprise product (EDMS).',
+                                 'Developed the RESTful APIs for the consumption of several different products.',
+                                 'Deploy the MinIO(s3) on the local machine (linux/ubuntu) with using container orchestration technology (Kuberenetes).',
+                                 
+                                ]}
                     />
                 </section>
             </div>  

@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core';
-
+import './Item.css';
 const styles = {
     Typography: {
       lineHeight:'1.8em',
@@ -65,13 +65,16 @@ const Item = (props) => {
         top: '53px',
         textAlign: 'left',
         minWidth: '180px',
-        color: '#888',
-        fontSize: '1em'
+        color: '#888',    
+        fontSize:'1em'
     }
     const itemDescription = {
         marginLeft:'30px',
     }
-    const {classes} = props;
+    const {classes, companyTitle,postion,positionRole,year,points,flag} = props;
+    
+    //change the font-size for Education, and otherss
+    if(flag==='Education') itemPositionRole.fontSize='1.2em';
 
     return (<div style={item}>  
             <Grid container style={descriptionItem}>
@@ -83,36 +86,28 @@ const Item = (props) => {
                 </Grid>
                 <Grid item xs={8} style={{display:'flex'}}>
                     <Typography variant='h4' style={itemCompanyTitle}>
-                        Zaavia 
+                        {companyTitle} 
                     </Typography>
                     <Typography  style={itemPositionTitle}>
-                        Jr. Software Developer
+                        {postion ? postion : ''}
                     </Typography>
                 </Grid>
             </Grid>
             <div style={itemPositionRole}>
-                JavaScript (ES6), Less, React, Redux, Closure Templates, QUnit
+                    {positionRole}
             </div>
             <div style={itemDate}>
-                June 2019 - current
+                     {year}
             </div>
             <div style={itemDescription}>
                 <ul style={{margin:'unset'}}>
-                    <li>
-                        <Typography classes={{ root: classes.Typography }}> 
-                            Grew a team from four to eight developers (a mix of front and backend developers)
-                        </Typography>   
-                    </li>
-                    <li>
-                        <Typography classes={{ root: classes.Typography }}> 
-                            Grew a team from four to eight developers (a mix of front and backend developers)
-                        </Typography>   
-                    </li>
-                    <li>
-                        <Typography classes={{ root: classes.Typography }}> 
-                            Grew a team from four to eight developers (a mix of front and backend developers)
-                        </Typography>   
-                    </li>
+                    {points.map( p => 
+                        <li key={p}>
+                            <Typography classes={{ root: classes.Typography }}> 
+                                {p}
+                            </Typography>   
+                        </li>
+                    )}
                 </ul>
             </div>
             </div>
