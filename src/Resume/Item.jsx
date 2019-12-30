@@ -99,17 +99,19 @@ const Item = (props) => {
             <div style={itemDate}>
                      {year}
             </div>
-            <div style={itemDescription}>
-                <ul style={{margin:'unset'}}>
-                    {points.map( p => 
-                        <li key={p}>
-                            <Typography classes={{ root: classes.Typography }}> 
-                                {p}
-                            </Typography>   
-                        </li>
-                    )}
-                </ul>
-            </div>
+            {points?
+                <div style={itemDescription}>
+                    <ul style={{margin:'unset'}}>
+                        {points.map( p => 
+                            <li key={p}>
+                                <Typography classes={{ root: classes.Typography }}> 
+                                    {p}
+                                </Typography>   
+                            </li>
+                        )}
+                    </ul>
+                </div>
+            :''}
             </div>
            );
 }

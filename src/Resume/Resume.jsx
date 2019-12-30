@@ -88,7 +88,6 @@ const Resume = (props) => {
                         positionRole={'JavaScript(ES6), Angular, React, HTML, JS, CSS'}
                         year={'Nov 2018 – Apr 2019'}
                         points={['Built a questionnaire application with user management and result automation.',
-                                 'Integrate new features at their existing apps on Angular.',
                                  'Customization and feature integration to their existing different sites on Angular and React.'
                                 ]}
                     />
@@ -100,12 +99,11 @@ const Resume = (props) => {
                     <Item
                         flag={'Education'}
                         companyTitle={'Iqra University'}
-                        //postion={'BS(Computer Science)'}
                         positionRole={'BS(Computer Science)'}
                         year={'Sep 2015 – May 2019'}
-                        points={['Develop most of the front features on React for the enterprise product (EDMS).',
-                                 'Developed the RESTful APIs for the consumption of several different products.',
-                                 'Deploy the MinIO(s3) on the local machine (linux/ubuntu) with using container orchestration technology (Kuberenetes).',
+                        points={['Developed the "smart ballot system" for the regional voting automation.',
+                                 'Interact the application with hardware(finger print scanner).',
+                                 'Deploye the micro services on container orchestration kubernetes for load balancing.',
                                  
                                 ]}
                     />
@@ -116,15 +114,21 @@ const Resume = (props) => {
                     </Typography>
                     <Item
                         flag={'Certification'}
-                        companyTitle={'Iqra University'}
-                        //postion={'BS(Computer Science)'}
-                        positionRole={'BS(Computer Science)'}
-                        year={'Sep 2015 – May 2019'}
-                        points={['Develop most of the front features on React for the enterprise product (EDMS).',
-                                 'Developed the RESTful APIs for the consumption of several different products.',
-                                 'Deploy the MinIO(s3) on the local machine (linux/ubuntu) with using container orchestration technology (Kuberenetes).',
-                                 
-                                ]}
+                        companyTitle={'Mastering React'}
+                        positionRole={'codewithmosh.com'}
+                        year={'issued: Aug 2019'}
+                    />
+                    <Item
+                        flag={'Certification'}
+                        companyTitle={'M220JS MongoDB for Javascript Developers'}
+                        positionRole={'MongoDB University'}
+                        year={'issued: Jul 2019'}
+                    />
+                     <Item
+                        flag={'Certification'}
+                        companyTitle={'Web Eng. / PHP & MYSQL'}
+                        positionRole={'Sir Syed university of Engg. Technology'}
+                        year={'Jul 2017 – Nov 2017'}
                     />
                 </section>
             </div>  
