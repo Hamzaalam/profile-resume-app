@@ -47,9 +47,32 @@ const project = () => {
                     <Single
                         Title={'Developer Folio App:'}
                         Tools={'Reactjs, Material UI'}
-                        Description={'Developer Folio is an app to showcase your work online specially for engineers,developers,and freelancers which have the features of profile creation, resume,contacts, projects display, and blogs.'}         
+                        Description={'Developer Folio is an app to showcase your work online specially for engineers, developers, and freelancers which have the features of profile creation, resume, contacts, projects display, and blogs.'}         
                         Demo={'https://hamzaalam.github.io/'}
                         Project={'https://github.com/Hamzaalam/developer-folio-app'}
+                    />
+                    <Single
+                        Title={'Vidly Application:'}
+                        Tools={'Reactjs,Bootstrap'}
+                        Description={'The vidly application renders the list of movies with pagination. The user can sort the movies with different genres and category and search.'}         
+                        Project={'https://github.com/Hamzaalam/vidly'}
+                    />
+                    <Single
+                        Title={'Questionnaire Application:'}
+                        Tools={'Angular 8, ngx-toaster ,asp.net 4.5 , SQL-SMS 2017'}
+                        Description={'The application have the user authentication feature with the help of JWT authentication. Users can attempt, create and check the results.The rest APIs were designed in aspt.net which will later consume in Angular.'}         
+                        Project={'https://github.com/Hamzaalam/quiz-app'}
+                    />
+                    <Single
+                        Title={'Smart Ballot System:'}
+                        Tools={'Laravel, PHP7, MYSQLi, Kuberenetes'}
+                        Description={'Project Smart Ballot System is an election system for large scale in which millions of users can active at a time and use their rights to cast the vote whom they want to cast through their CNIC and finger print validation. Scaling this type of application is not easy, we have used kubernetes technology to handle large amount of clients and scale our project by creating micro services.'}         
+                        Project={'https://github.com/Hamzaalam/smartballotsystem'}
+                    />
+                     <Single
+                        Title={'Resturant Point of sales (Unicenta):'}
+                        Tools={'Java 8, Mysql, open bravo framework'}
+                        Description={'customize and integrate the new features at the open source Point of sale(Unicenta) as per the clients requirement. Deploy the project on their local server with hardware installation.'}         
                     />
                 </section>
             </div> 

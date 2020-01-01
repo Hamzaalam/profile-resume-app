@@ -7,7 +7,7 @@ import Icon from './Icon'
 
 const Home = () => {
     const home = {
-        backgroundColor:"#282c34",
+        backgroundColor:"#1E2023",
         padding: "100px 40px",
         margin:"0 auto",
         color:"#fff",

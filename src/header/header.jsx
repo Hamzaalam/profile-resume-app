@@ -32,7 +32,7 @@ const Header = (props) => {
                         className="nav-bar-tabs"
                         value={value}
                         textColor="primary"
-                        TabIndicatorProps={{style: {background:"#535b67"}}}                        
+                        TabIndicatorProps={{style: {background:"#e7643e"}}}                        
                         onChange={handleChange}
                         aria-label="disabled tabs example"
                      >
@@ -42,7 +42,7 @@ const Header = (props) => {
                             component={Link}
                             to="/"
                             classes={{ root: classes.Tab }} 
-                            style={value === 0 ? {background:'#282c34'}:{background:'#535b67'}}
+                            style={value === 0 ? {background:'#1E2023'}:{background:'#e7643e'}}
                         />
                         <Tab                   
                             className="nav-bar-tabs"
@@ -50,7 +50,7 @@ const Header = (props) => {
                             component={Link}
                             to='/Resume' 
                             classes={{ root: classes.Tab }} 
-                            style={value === 1 ? {background:'#282c34'}:{background:'#535b67'}}
+                            style={value === 1 ? {background:'#1E2023'}:{background:'#e7643e'}}
 
                         />
                         <Tab
@@ -59,7 +59,7 @@ const Header = (props) => {
                             component={Link}
                             to='/Projects'
                             classes={{ root: classes.Tab }} 
-                            style={value === 2 ? {background:'#282c34'}:{background:'#535b67'}}
+                            style={value === 2 ? {background:'#1E2023'}:{background:'#e7643e'}}
 
                         />
                          <Tab 
@@ -68,7 +68,7 @@ const Header = (props) => {
                             component={Link}
                             to='/contact'
                             classes={{ root: classes.Tab }} 
-                            style={value === 3 ? {background:'#282c34'}:{background:'#535b67'}}
+                            style={value === 3 ? {background:'#1E2023'}:{background:'#e7643e'}}
 
                         />
                         <Tab 
@@ -77,7 +77,7 @@ const Header = (props) => {
                             component={Link}
                             to='/blog'
                             classes={{ root: classes.Tab }} 
-                            style={value === 4 ? {background:'#282c34'}:{background:'#535b67'}}
+                            style={value === 4 ? {background:'#1E2023'}:{background:'#e7643e'}}
 
                         />
                     </Tabs>

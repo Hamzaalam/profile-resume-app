@@ -5,6 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import {withStyles} from '@material-ui/core';
 
+  
 const styles = {
     Typography: {
       lineHeight:'1.8em',
@@ -13,8 +14,14 @@ const styles = {
     },
     Button:{
         textTransform:'capitalize',
-        fontWeight:'700'
-    }
+        fontWeight:'700',
+        color:'#1E2023 !important',
+        border:'1px solid #e7643e !important'
+    },
+    notchedOutline: {
+        borderWidth: "1.5px",
+        borderColor: "#e7643e !important"
+     }
 }
 const Contact = (props) => {
     const  content ={
@@ -52,6 +59,11 @@ const Contact = (props) => {
                                 variant="outlined"
                                 label="Email"
                                 style={{width:'300px'}}
+                                InputProps={{
+                                    classes: {
+                                      notchedOutline: classes.notchedOutline
+                                    }
+                                }}
                             />
                         </Grid>
                     </Grid>
@@ -64,6 +76,11 @@ const Contact = (props) => {
                                 rows="6"
                                 variant="outlined"
                                 fullWidth
+                                InputProps={{
+                                    classes: {
+                                      notchedOutline: classes.notchedOutline
+                                    }
+                                  }}
                             />
                         </Grid>
                     </Grid>

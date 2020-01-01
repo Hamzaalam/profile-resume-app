@@ -4,7 +4,9 @@ import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link'
 const Single = (props) => {
     const projectTitle ={
-        color:'#333'
+        color:'#333',
+        fontWeight:'600',
+        fontSize: '1.4rem'
     }
     const projectTools ={
         color:'#888'

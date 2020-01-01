@@ -5,7 +5,6 @@ const Blog = () => {
         margin: '0 auto',
         maxWidth:'700px',
         padding:'20px 20px',
-        background:'#535b67'
     }
     const section = {
         marginTop:'40px'

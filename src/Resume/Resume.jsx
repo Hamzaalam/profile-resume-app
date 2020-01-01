@@ -26,7 +26,7 @@ const Resume = (props) => {
     const downloadButton ={
         display: 'flex',
         justifyContent: 'flex-end',
-        textTransform: 'capitalize'
+        textTransform: 'capitalize',
     }
     const section = {
         marginTop:'40px'
@@ -36,6 +36,7 @@ const Resume = (props) => {
     }
     const heading ={
         fontWeight:'700',
+        color:'#264e59'
     }
     const { classes } = props;
 
@@ -43,13 +44,13 @@ const Resume = (props) => {
                 <section className='overview' style={section}>
                     <Grid container >
                        <Grid item xs={6}> 
-                            <Typography variant='h4' style={heading} >
+                            <Typography variant='h4' style={{color:'#e7643e' , fontWeight:'900'}} >
                                 Overview
                             </Typography>
                        </Grid>
                         <Grid item xs={6} style={downloadButton}>
                             <Button 
-                                style={{backgroundColor:'#535b67', color:'#fff'}} 
+                                style={{backgroundColor:'#e7643e', color:'#fff'}} 
                                 variant='contained'
                                 classes={{ root: classes.Button }}
                             >
@@ -120,7 +121,7 @@ const Resume = (props) => {
                     />
                     <Item
                         flag={'Certification'}
-                        companyTitle={'M220JS MongoDB for Javascript Developers'}
+                        companyTitle={'M220JS MongoDB for Javascript'}
                         positionRole={'MongoDB University'}
                         year={'issued: Jul 2019'}
                     />

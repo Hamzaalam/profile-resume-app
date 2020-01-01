@@ -43,12 +43,14 @@ const Item = (props) => {
     }
     const itemCompanyTitle = {
         color:'#333',
+        fontWeight: '600'
+
     }
     const itemPositionTitle = {
         color:'#888',
         marginTop: '7px',
         marginLeft:'15px',
-        fontSize: '20px'
+        fontSize: '20px',
     }
     const itemDate = {
         position: 'relative',
@@ -74,7 +76,7 @@ const Item = (props) => {
     const {classes, companyTitle,postion,positionRole,year,points,flag} = props;
     
     //change the font-size for Education, and otherss
-    if(flag==='Education') itemPositionRole.fontSize='1.2em';
+    if(flag==='Education'|| flag==='Certification') itemPositionRole.fontSize='1.2em';
 
     return (<div style={item}>  
             <Grid container style={descriptionItem}>
@@ -84,7 +86,7 @@ const Item = (props) => {
                         </div>
                     </div>
                 </Grid>
-                <Grid item xs={8} style={{display:'flex'}}>
+                <Grid item xs={11} style={{display:'flex'}}>
                     <Typography variant='h4' style={itemCompanyTitle}>
                         {companyTitle} 
                     </Typography>

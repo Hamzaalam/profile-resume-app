@@ -3,11 +3,11 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './icon.css'
 const Icon = (props) => {
-    const [iconColor, setIconColor] = React.useState("#545b67");    
+    const [iconColor, setIconColor] = React.useState("#404144");    
     
     const changeIconColor = (type) =>{
         if(type==='onMouseEnter') setIconColor('aliceblue');
-        if(type==='onMouseLeave') setIconColor('#545b67');
+        if(type==='onMouseLeave') setIconColor('#404144');
  
     }
     return (
