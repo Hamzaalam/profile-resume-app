@@ -33,7 +33,7 @@ const project = () => {
                         My Projects
                     </Typography>
                     <Single
-                        Title={'Electronic Document Management System (ENT. Application):'}
+                        Title={'Electronic Document Management System:'}
                         Tools={'Reactjs, Material UI , Nodejs , MongoDB, MinIO, PDFjs'}
                         Description={'Work on enterprise EDMS application which maintains the document life cycle and flexible to deploy on any organization and their subsidiaries .My role is to develop the most of the front end features on react and deployment of MinIO(object storage) on Kuberenetes and develop the RESTful APIs on nodejs with MinIO-SDK.'}         
                     />

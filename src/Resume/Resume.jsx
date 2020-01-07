@@ -38,6 +38,21 @@ const Resume = (props) => {
         fontWeight:'700',
         color:'#264e59'
     }
+    const handleDownloadResume = () => {
+        //console.log("Hello World", process.env.PUBLIC_URL)
+        //window.open(process.env.PUBLIC_URL + "/Hamza_Alam.pdf");
+        const path = process.env.PUBLIC_URL + "/Hamza_Alam.pdf";
+        fetch(path)
+			.then(response => {
+				response.blob().then(blob => {
+					let url = window.URL.createObjectURL(blob);
+					let a = document.createElement('a');
+					a.href = url;
+					a.download = 'Hamza_Alam.pdf';
+					a.click();
+				});
+        });
+    }
     const { classes } = props;
 
     return (<div style={content}>
@@ -53,6 +68,7 @@ const Resume = (props) => {
                                 style={{backgroundColor:'#e7643e', color:'#fff'}} 
                                 variant='contained'
                                 classes={{ root: classes.Button }}
+                                onClick={handleDownloadResume}
                             >
                                     Download Resume
                             </Button>
@@ -78,8 +94,7 @@ const Resume = (props) => {
                         year={'Jun 2019 – current'}
                         points={['Develop most of the front features on React for the enterprise product (EDMS).',
                                  'Developed the RESTful APIs for the consumption of several different products.',
-                                 'Deploy the MinIO(s3) on the local machine (linux/ubuntu) with using container orchestration technology (Kuberenetes).',
-                                 
+                                 'Application deployment on a production web servers and on a local servers(linux/ubuntu).',
                                 ]}
                     />
                      <Item

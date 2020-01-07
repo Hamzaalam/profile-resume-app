@@ -78,7 +78,7 @@ const Item = (props) => {
     //change the font-size for Education, and otherss
     if(flag==='Education'|| flag==='Certification') itemPositionRole.fontSize='1.2em';
 
-    return (<div style={item}>  
+    return (<div style={item} className='item'>  
             <Grid container style={descriptionItem}>
                 <Grid item xs={1}>
                     <div style={targetBorder}>
@@ -98,7 +98,7 @@ const Item = (props) => {
             <div style={itemPositionRole}>
                     {positionRole}
             </div>
-            <div style={itemDate}>
+            <div style={itemDate} className='item-date'>
                      {year}
             </div>
             {points?
